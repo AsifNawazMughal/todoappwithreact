@@ -1,0 +1,23 @@
+.header-logo {
+  color: #fff;
+  text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px cyan, 0 0 16px cyan;
+  font-size: 1rem;
+  animation: pulsate 2s infinite alternate;
+  border: 0.15rem solid #fff;
+  border-radius: 0.4rem;
+  padding: 0.4em 0.8em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.5rem cyan, inset 0 0 0.1rem rgba(255,255,255,0.2);
+}
+
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 6px #fff, 0 0 12px #fff, 0 0 18px cyan, 0 0 24px cyan;
+    box-shadow: 0 0 0.3rem #fff, 0 0 0.8rem cyan, inset 0 0 0.2rem rgba(255,255,255,0.3);
+  }
+
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 6px #fff, 0 0 10px cyan, 0 0 14px cyan;
+    box-shadow: 0 0 0.1rem #fff, 0 0 0.4rem cyan, inset 0 0 0.1rem rgba(255,255,255,0.1);
+  }
+}
+
