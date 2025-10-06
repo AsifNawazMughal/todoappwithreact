@@ -21,25 +21,25 @@ const SideBar = () => {
   }, [isOpen]);
 
   const navLinks = (
-    <ul className="space-y-4  md:space-y-0 md:flex md:space-x-4 text-white text-sm">
+    <ul className="space-y-4  md:space-y-0 md:flex md:space-x-4 text-white text-[20px]">
   <li className="relative group cursor-pointer">
         <NavLink 
           to="/" 
-          className="block px-4 py-2 rounded-md border-2 border-transparent hover:border-cyan-400 hover:text-cyan-300 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-cyan-400/30 transform hover:scale-105"
+          className="-z-50 block px-4 py-2 rounded-md border-2 border-transparent hover:border-cyan-400 hover:text-cyan-300 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-cyan-400/30 transform hover:scale-105"
         >
           Home
         </NavLink>
-        <div className="absolute inset-0 border-2 border-cyan-400 rounded-md opacity-0 group-hover:opacity-100 animate-pulse"></div>
+      
       </li>
 
       <li className="relative group cursor-pointer">
         <NavLink 
           to="/todos" 
-          className=" block px-4 py-2 rounded-md border-2 border-transparent hover:border-cyan-400 hover:text-cyan-300 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-cyan-400/30 transform hover:scale-105"
+          className="z-50 block px-4 py-2 rounded-md border-2 border-transparent hover:border-cyan-400 hover:text-cyan-300 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-cyan-400/30 transform hover:scale-105"
         >
           Todos
         </NavLink>
-        <div className="absolute inset-0 border-2 border-cyan-400 rounded-md opacity-0 group-hover:opacity-100 animate-pulse"></div>
+        
       </li>
     </ul>
   );
